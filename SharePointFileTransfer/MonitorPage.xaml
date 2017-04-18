@@ -1,0 +1,17 @@
+﻿<Page x:Class="SharePointFileTransfer.MonitorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SharePointFileTransfer"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="MonitorPage">
+
+    <Grid>
+        <TextBlock x:Name="tb_Monitor" HorizontalAlignment="Left" Margin="10,35,0,0" TextWrapping="Wrap" Text="Monitoroutput" VerticalAlignment="Top" Height="255" Width="280"/>
+        <Button x:Name="bttn_StartStop" Content="Start/Stop" HorizontalAlignment="Left" Margin="120,10,0,0" VerticalAlignment="Top" Width="75" Click="bttn_StartStop_Click"/>
+        <Button x:Name="bttn_DeleteLogs" Content="Delete Logs" HorizontalAlignment="Left" Margin="215,10,0,0" VerticalAlignment="Top" Width="75" Click="bttn_DeleteLogs_Click"/>
+        <Label x:Name="lb_ThreadState" Content="Thread: Running" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="96"/>
+    </Grid>
+</Page>
